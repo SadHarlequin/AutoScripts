@@ -14,14 +14,14 @@ public class HomeController {
     @PostMapping("/deleteUserSQL")
     public ModelAndView deleteUser() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("deleteUserSQL"); // или другую страницу с сообщением об успешном удалении
+        modelAndView.setViewName("deleteUserSQL");
         return modelAndView;
     }
 
     @PostMapping("/deleteDBSQL")
     public ModelAndView deleteDB() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("deleteDBSQL"); // или другую страницу с сообщением об успешном выполнении
+        modelAndView.setViewName("deleteDBSQL");
         return modelAndView;
     }
 }

@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class DeletingDBController {
     @GetMapping("/deleteDBSQL")
     public String deleteDBSQL() {
-        return "deleteDBSQL"; // имя шаблона
+        return "deleteDBSQL";
     }
     @PostMapping("/downloadDeletingDBScript")
     public ResponseEntity<byte[]> downloadDeletingDBScript(@RequestParam String dbname,
