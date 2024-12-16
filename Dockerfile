@@ -8,7 +8,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM openjdk:17-jre-slim
+FROM openjdk:17-jdk-slim
 
 COPY --from=build /app/target/AutoScripts-1.0-SNAPSHOT.jar /usr/app/AutoScripts.jar
 
