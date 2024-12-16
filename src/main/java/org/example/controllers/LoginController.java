@@ -22,6 +22,10 @@ public class LoginController {
         }
         return "login";
     }
+    @GetMapping("/index")
+    public String index(){
+        return "redirect:/login";
+    }
     @PostMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password, Model model) {
         if ("admin".equals(username) && "admin".equals(password)) {
